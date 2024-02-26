@@ -7,7 +7,7 @@ import cors  from "cors";
 import mongoose, { mongo } from "mongoose";
 import router from "./router";
 
-const app = express();
+export const app = express();
 app.use(cors({
     credentials: true,
 }))
