@@ -22,6 +22,6 @@ const MONGO_URL = "mongodb+srv://chenqiua:beandenzel123333@cluster0.acdfvww.mong
 mongoose.Promise = Promise;
 mongoose.connect(MONGO_URL);
 mongoose.connection.on("connected", ()=> console.log("mongoose connected"))
-mongoose.connection.on("error", (error: Error)=> console.log(error));
+mongoose.connection.on("error", (error: Error)=> console.log(error)); 
 app.use("/", router());
 
